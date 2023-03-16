@@ -1,0 +1,65 @@
+{
+  "MeshCube|2023-03-13T16:03:21.406Z|51375": {
+    "ƒ.MeshCube": {
+      "idResource": "MeshCube|2023-03-13T16:03:21.406Z|51375",
+      "name": "MeshCube",
+      "type": "MeshCube"
+    }
+  },
+  "Material|2023-03-13T16:05:45.849Z|44211": {
+    "ƒ.Material": {
+      "name": "ShaderLit",
+      "idResource": "Material|2023-03-13T16:05:45.849Z|44211",
+      "shader": "ShaderLit",
+      "coat": {
+        "ƒ.CoatColored": {
+          "color": "[0.4196078431372549, 0.9333333333333333, 1, 0.75]"
+        }
+      }
+    }
+  },
+  "Graph|2023-03-13T16:09:00.303Z|51759": {
+    "ƒ.Graph": {
+      "name": "NewGraph",
+      "active": true,
+      "components": {
+        "ComponentMesh": [
+          {
+            "ƒ.ComponentMesh": {
+              "idMesh": "MeshCube|2023-03-13T16:03:21.406Z|51375",
+              "pivot": {
+                "translation": "[0, 0, 0]",
+                "rotation": "[0, 0, 0]",
+                "scaling": "[1, 1, 1]"
+              },
+              "Component": {
+                "active": true
+              }
+            }
+          }
+        ],
+        "ComponentMaterial": [
+          {
+            "ƒ.ComponentMaterial": {
+              "sortForAlpha": false,
+              "clrPrimary": "[1, 1, 1, 1]",
+              "clrSecondary": "[1, 1, 1, 1]",
+              "pivot": {
+                "translation": "[0, 0]",
+                "rotation": 0,
+                "scaling": "[1, 1]"
+              },
+              "Component": {
+                "active": true
+              },
+              "idMaterial": "Material|2023-03-13T16:05:45.849Z|44211"
+            }
+          }
+        ]
+      },
+      "children": [],
+      "idResource": "Graph|2023-03-13T16:09:00.303Z|51759",
+      "type": "Graph"
+    }
+  }
+}
