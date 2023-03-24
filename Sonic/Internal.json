@@ -12,6 +12,17 @@
       }
     }
   },
+  "TextureImage|2023-03-23T13:15:26.315Z|49691": {
+    "ƒ.TextureImage": {
+      "url": "Image\\Floor.jpeg",
+      "type": "TextureImage",
+      "Texture": {
+        "idResource": "TextureImage|2023-03-23T13:15:26.315Z|49691",
+        "name": "Image\\Floor.jpeg",
+        "mipmap": "CRISP"
+      }
+    }
+  },
   "MeshQuad|2023-03-20T15:46:55.543Z|78496": {
     "ƒ.MeshQuad": {
       "idResource": "MeshQuad|2023-03-20T15:46:55.543Z|78496",
@@ -45,6 +56,56 @@
         "idResource": "TextureImage|2023-03-23T12:57:42.922Z|09347",
         "name": "Image\\Background.jpeg",
         "mipmap": "CRISP"
+      }
+    }
+  },
+  "AnimationSprite|2023-03-23T13:33:37.184Z|93821": {
+    "ƒ.AnimationSprite": {
+      "idResource": "AnimationSprite|2023-03-23T13:33:37.184Z|93821",
+      "idTexture": "TextureImage|2023-03-23T13:33:29.980Z|66522",
+      "frames": 25,
+      "wrapAfter": 5,
+      "start": "[0, 0]",
+      "size": "[80, 80]",
+      "next": "[80, 0]",
+      "wrap": "[0, 80]",
+      "Animation": {
+        "idResource": "AnimationSprite|2023-03-23T13:33:37.184Z|93821",
+        "name": "AnimationSprite",
+        "labels": {},
+        "events": {},
+        "framesPerSecond": 25,
+        "animationStructure": {}
+      }
+    }
+  },
+  "TextureImage|2023-03-23T13:33:29.980Z|66522": {
+    "ƒ.TextureImage": {
+      "url": "Image\\sonic-3.gif",
+      "type": "TextureImage",
+      "Texture": {
+        "idResource": "TextureImage|2023-03-23T13:33:29.980Z|66522",
+        "name": "Image\\sonic-3.gif",
+        "mipmap": "CRISP"
+      }
+    }
+  },
+  "MeshQuad|2023-03-23T13:34:40.321Z|25346": {
+    "ƒ.MeshQuad": {
+      "idResource": "MeshQuad|2023-03-23T13:34:40.321Z|25346",
+      "name": "MeshQuad"
+    }
+  },
+  "Material|2023-03-23T13:35:18.746Z|01884": {
+    "ƒ.Material": {
+      "name": "Sonic",
+      "idResource": "Material|2023-03-23T13:35:18.746Z|01884",
+      "shader": "ShaderLitTextured",
+      "coat": {
+        "ƒ.CoatTextured": {
+          "color": "[1, 1, 1, 1]",
+          "idTexture": "TextureImage|2023-03-23T13:33:29.980Z|66522"
+        }
       }
     }
   },
@@ -4082,6 +4143,133 @@
             },
             "children": []
           }
+        },
+        {
+          "ƒ.Node": {
+            "name": "Sonic",
+            "active": true,
+            "components": {
+              "ComponentAnimator": [
+                {
+                  "ƒ.ComponentAnimator": {
+                    "Component": {
+                      "active": true
+                    },
+                    "idAnimation": "AnimationSprite|2023-03-23T13:33:37.184Z|93821",
+                    "playmode": "loop",
+                    "quantization": "continous",
+                    "scale": 1,
+                    "scaleWithGameTime": true,
+                    "animateInEditor": false
+                  }
+                }
+              ],
+              "ComponentMesh": [
+                {
+                  "ƒ.ComponentMesh": {
+                    "idMesh": "MeshQuad|2023-03-23T13:34:40.321Z|25346",
+                    "pivot": {
+                      "translation": "[0, 0, 1]",
+                      "rotation": "[0, 0, 0]",
+                      "scaling": "[0.5999999046325684, 0.5999999046325684, 1]"
+                    },
+                    "Component": {
+                      "active": true
+                    }
+                  }
+                }
+              ],
+              "ComponentMaterial": [
+                {
+                  "ƒ.ComponentMaterial": {
+                    "sortForAlpha": false,
+                    "clrPrimary": "[1, 1, 1, 1]",
+                    "clrSecondary": "[1, 1, 1, 1]",
+                    "pivot": {
+                      "translation": "[0.052000001072883606, 0.004999998956918716]",
+                      "rotation": 0,
+                      "scaling": "[-0.03999967500567436, 0.040000069886446]"
+                    },
+                    "Component": {
+                      "active": true
+                    },
+                    "idMaterial": "Material|2023-03-23T13:35:18.746Z|01884"
+                  }
+                }
+              ],
+              "ComponentTransform": [
+                {
+                  "ƒ.ComponentTransform": {
+                    "local": {
+                      "translation": "[0, -0.40999990701675415, 0]",
+                      "rotation": "[0, 0, 0]",
+                      "scaling": "[1, 1, 1]"
+                    },
+                    "Component": {
+                      "active": true
+                    }
+                  }
+                }
+              ]
+            },
+            "children": []
+          }
+        },
+        {
+          "ƒ.Node": {
+            "name": "SonicSprite",
+            "active": true,
+            "components": {
+              "ComponentMesh": [
+                {
+                  "ƒ.ComponentMesh": {
+                    "idMesh": "MeshSprite|2023-03-23T13:56:11.498Z|11087",
+                    "pivot": {
+                      "translation": "[0, 0, 1]",
+                      "rotation": "[0, 0, 0]",
+                      "scaling": "[0.5999999046325684, 0.5999999046325684, 1]"
+                    },
+                    "Component": {
+                      "active": true
+                    }
+                  }
+                }
+              ],
+              "ComponentMaterial": [
+                {
+                  "ƒ.ComponentMaterial": {
+                    "sortForAlpha": false,
+                    "clrPrimary": "[1, 1, 1, 1]",
+                    "clrSecondary": "[1, 1, 1, 1]",
+                    "pivot": {
+                      "translation": "[0.05199999734759331, 5]",
+                      "rotation": 0,
+                      "scaling": "[-0.03999999910593033, 0.04000024497509003]"
+                    },
+                    "Component": {
+                      "active": true
+                    },
+                    "idMaterial": "Material|2023-03-23T13:57:14.595Z|82289"
+                  }
+                }
+              ],
+              "ComponentTransform": [
+                {
+                  "ƒ.ComponentTransform": {
+                    "local": {
+                      "translation": "[-0.5, -0.30000001192092896, 0]",
+                      "rotation": "[0, 0, 0]",
+                      "scaling": "[1, 1, 1]"
+                    },
+                    "Component": {
+                      "active": true
+                    }
+                  }
+                }
+              ]
+            },
+            "children": []
+          }
         }
       ],
       "idResource": "Graph|2023-03-20T15:45:07.065Z|54228",
@@ -4100,14 +4288,23 @@
       }
     }
   },
-  "TextureImage|2023-03-23T13:15:26.315Z|49691": {
-    "ƒ.TextureImage": {
-      "url": "Image\\Floor.jpeg",
-      "type": "TextureImage",
-      "Texture": {
-        "idResource": "TextureImage|2023-03-23T13:15:26.315Z|49691",
-        "name": "Image\\Floor.jpeg",
-        "mipmap": "CRISP"
+  "MeshSprite|2023-03-23T13:56:11.498Z|11087": {
+    "ƒ.MeshSprite": {
+      "idResource": "MeshSprite|2023-03-23T13:56:11.498Z|11087",
+      "name": "MeshSprite",
+      "type": "MeshSprite"
+    }
+  },
+  "Material|2023-03-23T13:57:14.595Z|82289": {
+    "ƒ.Material": {
+      "name": "SonicSprite",
+      "idResource": "Material|2023-03-23T13:57:14.595Z|82289",
+      "shader": "ShaderLitTextured",
+      "coat": {
+        "ƒ.CoatTextured": {
+          "color": "[1, 1, 1, 1]",
+          "idTexture": "TextureImage|2023-03-23T13:33:29.980Z|66522"
+        }
       }
     }
   }
