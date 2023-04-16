@@ -109,6 +109,26 @@
       }
     }
   },
+  "MeshSprite|2023-03-23T13:56:11.498Z|11087": {
+    "ƒ.MeshSprite": {
+      "idResource": "MeshSprite|2023-03-23T13:56:11.498Z|11087",
+      "name": "MeshSprite",
+      "type": "MeshSprite"
+    }
+  },
+  "Material|2023-03-23T13:57:14.595Z|82289": {
+    "ƒ.Material": {
+      "name": "SonicSprite",
+      "idResource": "Material|2023-03-23T13:57:14.595Z|82289",
+      "shader": "ShaderLitTextured",
+      "coat": {
+        "ƒ.CoatTextured": {
+          "color": "[1, 1, 1, 1]",
+          "idTexture": "TextureImage|2023-03-23T13:33:29.980Z|66522"
+        }
+      }
+    }
+  },
   "Graph|2023-03-20T15:45:07.065Z|54228": {
     "ƒ.Graph": {
       "name": "Game",
@@ -144,6 +164,31 @@
                 "active": true
               },
               "idMaterial": "Material|2023-03-23T12:57:32.253Z|11213"
+            }
+          }
+        ],
+        "ComponentCamera": [
+          {
+            "ƒ.ComponentCamera": {
+              "backgroundColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 1
+              },
+              "backgroundEnabled": true,
+              "projection": "central",
+              "fieldOfView": 45,
+              "direction": "diagonal",
+              "aspect": 1.7966573816155988,
+              "pivot": {
+                "translation": "[0, 0, 6]",
+                "rotation": "[0, 180, 0]",
+                "scaling": "[1, 1, 1]"
+              },
+              "Component": {
+                "active": true
+              }
             }
           }
         ]
@@ -4147,7 +4192,7 @@
         {
           "ƒ.Node": {
             "name": "Sonic",
-            "active": true,
+            "active": false,
             "components": {
               "ComponentAnimator": [
                 {
@@ -4242,9 +4287,9 @@
                     "clrPrimary": "[1, 1, 1, 1]",
                     "clrSecondary": "[1, 1, 1, 1]",
                     "pivot": {
-                      "translation": "[0.05199999734759331, 5]",
+                      "translation": "[0.05199999734759331, 4]",
                       "rotation": 0,
-                      "scaling": "[-0.03999999910593033, 0.04000024497509003]"
+                      "scaling": "[-0.05000000074505806, 0.05000024661421776]"
                     },
                     "Component": {
                       "active": true
@@ -4284,26 +4329,6 @@
       "coat": {
         "ƒ.CoatColored": {
           "color": "[1, 1, 1, 1]"
-        }
-      }
-    }
-  },
-  "MeshSprite|2023-03-23T13:56:11.498Z|11087": {
-    "ƒ.MeshSprite": {
-      "idResource": "MeshSprite|2023-03-23T13:56:11.498Z|11087",
-      "name": "MeshSprite",
-      "type": "MeshSprite"
-    }
-  },
-  "Material|2023-03-23T13:57:14.595Z|82289": {
-    "ƒ.Material": {
-      "name": "SonicSprite",
-      "idResource": "Material|2023-03-23T13:57:14.595Z|82289",
-      "shader": "ShaderLitTextured",
-      "coat": {
-        "ƒ.CoatTextured": {
-          "color": "[1, 1, 1, 1]",
-          "idTexture": "TextureImage|2023-03-23T13:33:29.980Z|66522"
         }
       }
     }
